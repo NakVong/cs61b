@@ -1,0 +1,24 @@
+Please enter desired length of each string: 100
+
+Enter # strings to insert into the maps: 10000
+class ULLMap: 0.53 sec
+class BSTMap: 0.01 sec
+Java's Built-in TreeMap: 0.01 sec
+Java's Built-in HashMap: 0.01 sec
+Would you like to try more timed-tests? (y/n)y
+
+Enter # strings to insert into the maps: 20000
+class ULLMap: 2.27 sec
+class BSTMap: 0.02 sec
+Java's Built-in TreeMap: 0.02 sec
+Java's Built-in HashMap: 0.02 sec
+
+Enter # strings to insert into the maps: 40000
+class ULLMap: 8.65 sec
+class BSTMap: 0.04 sec
+Java's Built-in TreeMap: 0.04 sec
+Java's Built-in HashMap: 0.04 sec
+
+For the ULLMap, doubling the input size increases the runtime by roughly four times. For BSTMap, doubling
+the input size increases the runtime by roughly two times. This suggests to me that ULLMap is running in
+theta(n^2) time, and BSTMap is running in theta(n) time.
